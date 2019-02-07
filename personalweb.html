@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #3e7ce4;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #3e7ce4;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #3e7ce4;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #3e7ce4;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+<h2>My Home Web Page</h2>
+<img src="web page avatar.PNG" alt="web page avatar" class="center" width="200" height="200"/>
+<p>My personal avatar</p>
+
+<header>
+  <h2>Pedro Colon</h2>
+</header>
+
+<section>
+  <nav>
+    <p></p>
+    <ul></ul>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1></h1>
+    <p>About Me:</p>
+    <p>My name is Pedro Colon and I have na interset in computer science.
+     I like listening to all different types of music, but I like rock mainly.
+     I hope to get into a job I like that involves computer science.
+     I like playing video games in my spare time when I'm not doing any work.
+     
+     
+     </p>
+  </article>
+</section>
+
+<footer>
+  <img src="fblogo.png" alt="Facebook logo" width="25" height="25">
+  <img src="ig logo.png" alt="Instagram logo" width="25" height="25">
+  <img src="twitter logo.png" alt="twitter logo" width="25" height="25">
+</footer>
+
+</body>
+</html>
